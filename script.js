@@ -7,9 +7,6 @@ document.querySelectorAll('.nav a').forEach(anchor => {
   });
 });
 
-// Form submissions
-// Removed as forms were deleted
-
 // Add fade-in animation on scroll
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {

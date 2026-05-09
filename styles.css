@@ -422,6 +422,10 @@ section {
   font-size: 2.5rem;
 }
 
+.vakinha {
+  font-size: 2.5rem;
+}
+
 .price {
   font-size: 1.8rem;
   font-weight: 700;
@@ -770,6 +774,11 @@ section {
 }
 
 .support-ouro {
+  background: #D4AF37;
+  color: #000;
+}
+
+.support-vakinha {
   background: #D4AF37;
   color: #000;
 }
