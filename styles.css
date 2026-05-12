@@ -10,7 +10,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+img {
+    max-width: 100%;
+    height: auto;
+}
 body {
   font-family: 'Poppins', sans-serif;
   color: var(--white);
@@ -557,8 +560,13 @@ button[type="submit"]:hover {
 /* Responsive */
 @media (max-width: 768px) {
   .nav ul {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
     gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
   }
 
   .nav-underline {
@@ -574,12 +582,12 @@ button[type="submit"]:hover {
   }
 
   .hero-buttons {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
   .hero-content.hero-grid {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 30px;
   }
@@ -599,7 +607,7 @@ button[type="submit"]:hover {
   }
 
   .about-content {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .event-cards, .plans {
