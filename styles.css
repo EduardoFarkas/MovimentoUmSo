@@ -5,11 +5,6 @@
   --shadow: rgba(0, 0, 0, 0.5);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 img {
     max-width: 100%;
     height: auto;
@@ -287,10 +282,12 @@ section {
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .card {
-  background-color: var(--white);
+  flex:1;
+  background-color: #c06600;
   color: var(--black);
   padding: 30px;
   border-radius: 10px;
@@ -732,7 +729,7 @@ section {
   border-radius: 20px;
   font-weight: 600;
   margin-bottom: 20px;
-  display: inline-block;
+  display: align-items: center;
 }
 
 .apoio-info {
@@ -742,14 +739,15 @@ section {
 }
 
 .support-actions {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(160px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
   width: min(100%, 960px);
 }
 
 .support-btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 10px;
   justify-content: center;
