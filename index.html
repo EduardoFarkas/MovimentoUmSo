@@ -125,6 +125,20 @@
     </div>
   </section>
 
+<script>
+function copiarPix() {
+  var chave = document.getElementById("chavePix").value;
+  navigator.clipboard.writeText(chave).then(function() {
+    var botao = document.getElementById("btnCopiar");
+    botao.innerText = "Chave Copiada! ✅";
+    setTimeout(function() {
+      botao.innerText = "Clique para Copiar";
+    }, 3000);
+  }).catch(function(err) {
+    alert("Erro ao copiar chave automaticamente. Por favor, copie manualmente.");
+  });
+}
+</script>
   <section id="apoio" class="support">
     <div class="container">
       <h2>APOIE <span style="color: orange;">O MOVIMENTO</span></h2>
@@ -132,29 +146,11 @@
       <p><span style="color: rgb(206, 134, 0);">“Quem semeia com generosidade, colherá abundantemente.”<br>2 Coríntios 9:6</span></p>
       <div class="plans">
         <div class="plan plan-bronze">
-          <span class="medal">🥉</span>
-          <h3>Bronze</h3>
-          <p class="price price-bronze">R$ 500</p>
-          <a href="apoio.html" class="btn-info">🙏 Quero contribuir</a>
-        </div>
-        <div class="plan plan-prata">
-          <span class="medal">🥈</span>
-          <h3>Prata</h3>
-          <p class="price price-prata">R$ 1.000</p>
-          <a href="apoio.html" class="btn-info">🤲 Fazer parte do mover</a>
-        </div>
-        <div class="plan plan-ouro">
-          <span class="medal">🥇</span>
-          <h3>Ouro</h3>
-          <p class="price price-ouro">R$ 2.000</p>
-          <a href="apoio.html" class="btn-info">❤️ Semear nessa obra</a>
-        </div>
-        <div class="plan plan-vakinha">
-          <span class="vakinha">🐮</span>
-          <h3>Doe pelo site Vakinha</h3>
-          <p class="price price-vakinha">O Valor que seu coração mandar!</p>
-          <a href="https://vakinha.bio/6111959" class="btn-info">🎊 Doar com Alegria</a>
-        </div>
+          <span class="medal">🎁</span>
+          <h1>umsomovimento26@gmail.com</h1>
+          <p class="price price-bronze">Ajude confortme o seu coração manda</p>
+          <input type="hidden" id="chavePix" value="umsomovimento26@gmail.com">
+          <a href="javascript:void(0)" id="btnCopiar" class="btn-info" onclick="copiarPix()">Clique para Copiar</a>
         </div>
       </div>
     </div>
