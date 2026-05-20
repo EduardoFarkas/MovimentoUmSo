@@ -3,21 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="UM SÓ - Um encontro cristão de adoração e unidade. Junte-se a nós em 07 de setembro.">
-  <meta name="keywords" content="UM SÓ, evento cristão, adoração, unidade, Deus">
+  <meta name="description" content="UM SÓ - Um encontro cristão interdenominacional de adoração e unidade. 07 de Setembro de 2026, Vale dos Sinos, RS.">
+  <meta name="keywords" content="UM SÓ, evento cristão, adoração, unidade, Deus, encontro, worship, Vale dos Sinos">
+  <meta name="author" content="UM SÓ Movimento">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://umsodeus.com.br/">
+  <meta property="og:title" content="UM SÓ — Um só Deus. Um só povo.">
+  <meta property="og:description" content="Um encontro cristão interdenominacional de adoração. 07 de Setembro de 2026, Vale dos Sinos, RS.">
+  <meta property="og:image" content="https://umsodeus.com.br/midia.png">
+  <meta property="og:locale" content="pt_BR">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://umsodeus.com.br/">
+  <meta name="twitter:title" content="UM SÓ — Um só Deus. Um só povo.">
+  <meta name="twitter:description" content="Um encontro cristão interdenominacional de adoração. 07 de Setembro de 2026, Vale dos Sinos, RS.">
+  <meta name="twitter:image" content="https://umsodeus.com.br/midia.png">
+  
   <title>UM SÓ - Um só Deus. Um só povo.</title>
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+  
   <link rel="icon" href="logolimpa.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
+  
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "UM SÓ - Encontro de Adoração e Unidade",
+    "description": "Um encontro cristão interdenominacional de adoração. Um encontro fora das quatro paredes. Sem placas. Sem rótulos. Só Deus no centro.",
+    "startDate": "2026-09-07T00:00:00-03:00",
+    "endDate": "2026-09-07T23:59:00-03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Vale dos Sinos",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "RS",
+        "addressCountry": "BR"
+      }
+    },
+    "image": "https://umsodeus.com.br/midia.png",
+    "organizer": {
+      "@type": "Organization",
+      "name": "UM SÓ",
+      "url": "https://umsodeus.com.br",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-51-93380-4768",
+        "contactType": "customer service"
+      }
+    },
+    "performer": {
+      "@type": "MusicGroup",
+      "name": "UM SÓ Worship"
+    }
+  }
+  </script>
 </head>
 <body>
   <header class="header">
     <div class="header-content">
       <div class="logo"><img src="logolimpasf.png" alt="Logo UM SÓ"></div>
       <nav class="nav">
-        <ul>
+        <ul class="nav-links">
           <li><a href="#inicio">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#encontro">Encontro</a></li>
@@ -27,31 +86,56 @@
         </ul>
         <div class="nav-underline"></div>
       </nav>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
-  <section id="inicio" class="hero">
-    <div class="hero-content">
-      <div class="hero-right">
-        <img src="adorandocruz.jpg" alt="Adorando a cruz" class="hero-image">
-        <div class="hero-logo-wrapper">
+  <!-- Mobile Menu Overlay -->
+  <div class="nav-mobile" id="navMobile">
+    <a href="#inicio" class="nav-link">Início</a>
+    <a href="#sobre" class="nav-link">Sobre</a>
+    <a href="#encontro" class="nav-link">Encontro</a>
+    <a href="#servir" class="nav-link">Servir</a>
+    <a href="#apoio" class="nav-link">Apoio</a>
+    <a href="#contato" class="nav-link">Contato</a>
+  </div>
+
+<section id="inicio" class="hero">
+  <div class="hero-right">
+    <img src="adorandocruz.jpg" alt="Adorando a cruz" class="hero-image">
+    <div class="hero-logo-wrapper">
           <img src="logomeiolimpa.png" alt="Logo UM SÓ" class="hero-logo">
+    </div>
+    <div class="hero-overlay">
+      <div class="hero-text-content">
+        <h1>UM SÓ — Um só Deus. Um só povo.</h1>
+        <p class="hero-tagline">Um encontro fora das quatro paredes. Sem placas. Sem rótulos. Só Deus no centro.</p>
+        <div class="hero-date">
+          <span class="overline">07 DE SETEMBRO DE 2026</span>
+          <span class="hero-location">Vale dos Sinos, RS</span>
         </div>
-        <div class="hero-overlay">
+        <div class="hero-buttons">
+          <a href="#encontro" class="btn btn-primary btn-lg">Quero Participar</a>
+          <a href="#sobre" class="btn btn-secondary btn-lg">Saiba Mais</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <section id="sobre" class="about">
     <div class="container">
       <div class="about-content">
         <div class="about-text">
           <h2>O QUE É O UM SÓ?</h2>
-          <p>Um encontro fora das quatro paredes,<br> sem placas, sem rótulos,<br> com um único propósito:<br> <span style="color: orange;">DEUS NO CENTRO.</span></p>
+          <p>Um encontro fora das quatro paredes,<br> sem placas, sem rótulos,<br> com um único propósito:<br> <span class="text-gold">DEUS NO CENTRO.</span></p>
         </div>
         <div class="about-image">
-          <img src="multidaoadorando.jpg" alt="Multidão adorando">
+          <img src="multidaoadorando.jpg" alt="Multidão adorando a Deus">
         </div>
       </div>
     </div>
@@ -61,25 +145,27 @@
     <div class="container">
       <h2>ENCONTRO</h2>
       <div class="event-cards">
-        <div class="card">
+        <div class="card animate-on-scroll delay-1">
           <div class="icon">📅</div>
           <h3>Data</h3>
-          <p>07 de setembro</p>
+          <p>07 de setembro de 2026</p>
         </div>
-        <div class="card">
+        <div class="card animate-on-scroll delay-2">
           <div class="icon">📍</div>
           <h3>Local</h3>
-          <p>Em breve</p>
+          <p>Vale dos Sinos, RS</p>
         </div>
-        <div class="card">
+        <div class="card animate-on-scroll delay-3">
           <div class="icon">🕒</div>
           <h3>Horário</h3>
           <p>Em breve</p>
         </div>
-        <div class="card">
+        <div class="card animate-on-scroll delay-4">
           <div class="icon">🚛</div>
-          <h3>Oportunidades<br>Foodtruck<br>Espaços para Lojas</h3>
-          <a href="foodtruck.html" class="btn-info">Vagas Limitadas!</a>
+          <h3>Oportunidades</h3>
+          <p>Foodtruck e Espaços para Lojas</p>
+          <a href="foodtruck.html" class="btn-info" aria-label="Saiba mais sobre oportunidades de foodtruck e lojas">Vagas Limitadas!</a>
+        </div>
       </div>
     </div>
   </section>
@@ -88,36 +174,36 @@
     <div class="container">
       <h2>FAÇA PARTE</h2>
       <div class="volunteer-areas">
-        <div class="area area-recepcao">
+        <div class="area area-recepcao animate-on-scroll delay-1">
           <div class="area-image"></div>
           <h3>Recepção</h3>
           <p>Acolher, orientar e receber pessoas.</p>
-          <a href="https://chat.whatsapp.com/KQdRpLxNtdp9pKH8oHyIia" target="_blank" class="whatsapp-btn">
-            <img src="whatsapp.png" alt="WhatsApp Recepção">
+          <a href="https://chat.whatsapp.com/KQdRpLxNtdp9pKH8oHyIia" target="_blank" class="whatsapp-btn" aria-label="Entrar no grupo de WhatsApp da Recepção">
+            <img src="whatsapp.png" alt="">
           </a>
         </div>
-        <div class="area area-midia">
+        <div class="area area-midia animate-on-scroll delay-2">
           <div class="area-image"></div>
           <h3>Mídias</h3>
           <p>Registrar e compartilhar cada momento.</p>
-          <a href="https://chat.whatsapp.com/KQdRpLxNtdp9pKH8oHyIia" target="_blank" class="whatsapp-btn">
-            <img src="whatsapp.png" alt="WhatsApp Mídias">
+          <a href="https://chat.whatsapp.com/KQdRpLxNtdp9pKH8oHyIia" target="_blank" class="whatsapp-btn" aria-label="Entrar no grupo de WhatsApp das Mídias">
+            <img src="whatsapp.png" alt="">
           </a>
         </div>
-        <div class="area area-oracao">
+        <div class="area area-oracao animate-on-scroll delay-3">
           <div class="area-image"></div>
           <h3>Oração</h3>
           <p>Orar antes, durante e após o evento.</p>
-          <a href="https://chat.whatsapp.com/KQdRpLxNtdp9pKH8oHyIia" target="_blank" class="whatsapp-btn">
-            <img src="whatsapp.png" alt="WhatsApp Oração">
+          <a href="https://chat.whatsapp.com/KQdRpLxNtdp9pKH8oHyIia" target="_blank" class="whatsapp-btn" aria-label="Entrar no grupo de WhatsApp da Oração">
+            <img src="whatsapp.png" alt="">
           </a>
         </div>
-        <div class="area area-tecnica">
+        <div class="area area-tecnica animate-on-scroll delay-4">
           <div class="area-image"></div>
           <h3>Técnica</h3>
           <p>Cuidar do som, luz e estrutura.</p>
-          <a href="https://chat.whatsapp.com/KQdRpLxNtdp9pKH8oHyIia" target="_blank" class="whatsapp-btn">
-            <img src="whatsapp.png " alt="WhatsApp Técnica">
+          <a href="https://chat.whatsapp.com/KQdRpLxNtdp9pKH8oHyIia" target="_blank" class="whatsapp-btn" aria-label="Entrar no grupo de WhatsApp da Técnica">
+            <img src="whatsapp.png" alt="">
           </a>
         </div>
       </div>
@@ -125,32 +211,21 @@
     </div>
   </section>
 
-<script>
-function copiarPix() {
-  var chave = document.getElementById("chavePix").value;
-  navigator.clipboard.writeText(chave).then(function() {
-    var botao = document.getElementById("btnCopiar");
-    botao.innerText = "Chave Copiada! ✅";
-    setTimeout(function() {
-      botao.innerText = "Clique para Copiar";
-    }, 3000);
-  }).catch(function(err) {
-    alert("Erro ao copiar chave automaticamente. Por favor, copie manualmente.");
-  });
-}
-</script>
   <section id="apoio" class="support">
     <div class="container">
-      <h2>APOIE <span style="color: orange;">O MOVIMENTO</span></h2>
-      <p>Deus está levantando um movimento.<br>Vidas estão sendo transformadas.<br>E você pode fazer parte disso..</p>
-      <p><span style="color: rgb(206, 134, 0);">“Quem semeia com generosidade, colherá abundantemente.”<br>2 Coríntios 9:6</span></p>
+      <h2>APOIE <span class="text-gold">O MOVIMENTO</span></h2>
+      <p>Deus está levantando um movimento.<br>Vidas estão sendo transformadas.<br>E você pode fazer parte disso.</p>
+      <blockquote class="verse">
+        "Quem semeia com generosidade, colherá abundantemente."
+        <span class="verse-ref">2 Coríntios 9:6</span>
+      </blockquote>
       <div class="plans">
-        <div class="plan plan-bronze">
-          <span class="medal">🎁</span>
-          <h1>umsomovimento26@gmail.com</h1>
-          <p class="price price-bronze">Ajude conforme o seu coração manda</p>
+        <div class="plan plan-bronze animate-on-scroll">
+          <span class="medal">PIX</span>
+          <p class="pix-key">umsomovimento26@gmail.com</p>
+          <p class="price price-bronze">Sua contribuição faz total diferença, não temos fins lucrativos, nos ajude com os custos!</p>
           <input type="hidden" id="chavePix" value="umsomovimento26@gmail.com">
-          <a href="javascript:void(0)" id="btnCopiar" class="btn-info" onclick="copiarPix()">Clique para Copiar</a>
+          <a href="javascript:void(0)" id="btnCopiar" class="btn-info" onclick="copiarPix()" aria-label="Copiar chave PIX para doação">Clique para Copiar</a>
         </div>
       </div>
     </div>
@@ -160,7 +235,7 @@ function copiarPix() {
     <div class="container">
       <div class="after-content">
         <div class="after-text">
-          <h2>E DEPOIS DO <span style="color: orange;">EVENTO?</span></h2>
+          <h2>E DEPOIS DO <span class="text-gold">EVENTO?</span></h2>
           <p>Pessoas que aceitarem Jesus serão<br> encaminhadas para igrejas próximas,<br> garantindo continuidade na fé e<br> no relacionamento com Deus.</p>
           <p class="highlight">Não termina no evento. É só o começo.</p>
         </div>
@@ -176,12 +251,12 @@ function copiarPix() {
       <div class="footer-content">
         <div class="logo"><img src="logolimpasf.png" alt="Logo UM SÓ"></div>
         <div class="social">
-          <a href="https://instagram.com/umso.oficial26" target="_blank">Instagram: @umso.oficial26</a>
+          <a href="https://instagram.com/umso.oficial26" target="_blank" aria-label="Siga-nos no Instagram"><span>&#128248;</span><spam style="color: orange;"> Instagram</spam><br>@umso.oficial26</a>
         </div>
         <div class="contact">
-          <a href="https://wa.me/5551933804768" target="_blank">Contato: +5551 93380-4768</a>
+          <a href="https://wa.me/5551933804768" target="_blank" aria-label="Entre em contato conosco pelo WhatsApp"><span>&#128241;</span><spam style="color: rgb(2, 173, 2);">Whatsapp</spam><br>+55 51 93380-4768</a>
         </div>
-        <p>&copy; 2026 UM SÓ. Todos os direitos reservados.</p>
+        <p>&copy; 2026 UM SÓ. Todos os direitos reservados. | Feito com fé</p>
       </div>
     </div>
   </footer>
